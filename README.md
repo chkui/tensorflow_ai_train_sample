@@ -13,4 +13,6 @@
 ```commandline
 pip install -r requirements.txt
 ```
--  
+- Check install
+  1. Activate virtualenv, then:`python sample/helloworld.py`
+  2. Success of console print:`INFO:tensorflow:b'Hello world!'`  
