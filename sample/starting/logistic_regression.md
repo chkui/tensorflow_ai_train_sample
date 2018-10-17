@@ -1,4 +1,4 @@
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+		<math>
 			<mrow>
 				<mi>A</mi>
 				<mo>=</mo>
