@@ -1,2 +1,20 @@
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-    <mi>y</mi><mo>=</mo><msub><mi>w</mi><mi>j</mi></msub><msub><mi>x</mi><mrow><mi>j</mi><mo>&#xA0;</mo></mrow></msub></math>
+			<mrow>
+				<mi>A</mi>
+				<mo>=</mo>
+				
+				<mfenced open="[" close="]">
+					<mtable>
+						<mtr>
+							<mtd><mi>x</mi></mtd>
+							<mtd><mi>y</mi></mtd>
+						</mtr>
+						
+						<mtr>
+							<mtd><mi>z</mi></mtd>
+							<mtd><mi>w</mi></mtd>
+						</mtr>
+					</mtable>
+				</mfenced>
+			</mrow>
+		</math>
