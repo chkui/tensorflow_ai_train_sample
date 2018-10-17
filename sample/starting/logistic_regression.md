@@ -1,4 +1,7 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-$$12$$
+<math>
+    <mroot>
+        <mi>a</mi>
+        <mi>n</mi>
+    </mroot>
+</math>
 
