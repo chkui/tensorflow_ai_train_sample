@@ -16,6 +16,18 @@ def plus():
     print('\n{}\n + 1\n=\n{}'.format(matrix, matrix + 1))
 
 
+def multiplication():
+    W = np.matrix([[1, 2, 3]])
+    X = np.matrix([[1, 2, 3], [2, 3, 4], [3, 4, 5], [5, 6, 7], [5, 6, 7]])
+    R = W * X.T
+    print(R)
+    print(R.T)
+    print(R.shape)
+    R_1 = X * W.T
+    print(R_1)
+    print(R_1.shape)
+
+
 def division():
     print('矩阵除法操作。')
     print('矩阵除以一个元素：')
@@ -42,7 +54,7 @@ def division():
     print('=============================================')
     print('矩阵相除：')
     print('B / A = ')
-    print(B/A)
+    print(B / A)
     '''
     在numpy中直接使用/符号计算，相当于对位元素相除，并不是真正的矩阵除法。
     矩阵除法常规的计算法则是B/A = B*Ai，（Ai是A的逆矩阵）
@@ -55,7 +67,20 @@ def division():
     Ai = A.I
     print('{}'.format(B * Ai))
 
-    print(2**A)
+    C = np.matrix([[1], [2], [3]])
+    print(C)
+    print('的逆矩阵：')
+    print(C.I)
+    print(C.I.T)
+
+
+def exponent():
+    A = np.matrix([[2, 3, 4], [7, 8, 9], [5, 6, 7]])
+    print(np.exp(2))
+    print(np.exp(3))
+    print(np.exp(4))
+
+    print(np.exp(A))
 
 
 def main():
@@ -106,6 +131,7 @@ def main():
 
 
 if __name__ == '__main__':
-    # 加
     # plus()
-    division()
+    # division()
+    # exponent()
+    multiplication()
