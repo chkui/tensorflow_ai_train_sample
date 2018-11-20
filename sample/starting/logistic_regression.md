@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 逻辑回归（logistics ）
 
 标签（空格分隔）： 未分类
@@ -150,3 +151,25 @@ $\nabla=X×(Y^T-(1+E)^I)/m$
 $\nabla=X×(Y^T-(1+exp(-X×W^T))^I)/m$
 **更新权重矩阵**
 $W = W-\eta\nabla$
+=======
+		<math>
+			<mrow>
+				<mi>A</mi>
+				<mo>=</mo>
+				
+				<mfenced open="[" close="]">
+					<mtable>
+						<mtr>
+							<mtd><mi>x</mi></mtd>
+							<mtd><mi>y</mi></mtd>
+						</mtr>
+						
+						<mtr>
+							<mtd><mi>z</mi></mtd>
+							<mtd><mi>w</mi></mtd>
+						</mtr>
+					</mtable>
+				</mfenced>
+			</mrow>
+		</math>
+>>>>>>> 15f31a76d7498fd61b62a74e986c251a696b8e82
