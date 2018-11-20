@@ -134,4 +134,6 @@ if __name__ == '__main__':
     # plus()
     # division()
     # exponent()
-    multiplication()
+    # multiplication()
+    print(np.matrix([[0,1],[0,1],[0,1],[1,0]]) - 0.05*np.matrix([[5,-2],[4,0],[4,0],[5,0]]))
+

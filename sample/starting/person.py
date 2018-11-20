@@ -104,7 +104,7 @@ def main():
 
     for i, feature in enumerate(random_feature):
         name = '随机' + str(i)
-        print('随机{}: 眼睛：{},嘴巴:{},鼻子:{},脸型:{}'.format(i, EYE[feature[0]], NOSE[feature[1]], NOSE[feature[2]],
+        print('随机{}: 眼睛：{},嘴巴:{},鼻子:{},脸型:{}'.format(i, EYE[feature[0]], MOUTH[feature[1]], NOSE[feature[2]],
                                                      FACE[feature[3]]))
         Person(name, feature).classier().print()
 
