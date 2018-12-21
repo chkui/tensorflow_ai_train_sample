@@ -31,7 +31,7 @@ def feature_entropy():
 def ratio_entropy():
     num = 20  # 样本分类
     total = 5000  # 样本个数
-    range = 10 # 样本取值范围
+    range = 10  # 样本取值范围
     features = np.matrix(np.random.randint(range, size=(total, num)))
     labels = np.random.randint(1, size=(total, num))
 
@@ -40,8 +40,8 @@ def ratio_entropy():
     labels = np.matrix(labels)
 
     features_exp = np.exp(features)
-    row_sums = features_exp*np.matrix(np.random.randint(low=1,high=2,size=(num, 1)))
-    classify = features_exp/row_sums
+    row_sums = features_exp * np.matrix(np.random.randint(low=1, high=2, size=(num, 1)))
+    classify = features_exp / row_sums
 
     softmax_top = (classify * labels.T).diagonal()
     print(softmax_top.tolist()[0])
@@ -54,31 +54,6 @@ def ratio_entropy():
     plt.ylabel("softmax highest")
     plt.show()
 
-    # for i in range(total):
-    #     feature = features[i];
-    #     label = labels[i];
-    #
-    #
-    # def random_features(feature_num):
-    #     return np.random.randint(200, size=(200, feature_num))
-    #
-    # loss = []
-    # h = []
-    #
-    # for i in range(1000):
-    #     features = random_features(feature_num)
-    #     flag = features[:, pos]
-    #     loss.append(np.sum(flag) / np.sum(features))
-    #     exp = np.exp(features)
-    #     softmax = exp / np.sum(exp)
-    #     h.append(np.sum(label * np.log(1 / softmax)) / 1000)
-    #
-    # plt.figure()
-    # plt.scatter(loss, h)
-    # plt.xlabel("loss")
-    # plt.ylabel("corss entropy")
-    # plt.show()
 
-
-# feature_entropy()
+feature_entropy()
 ratio_entropy()
